@@ -80,6 +80,7 @@ public class Bicho{
         System.out.println("Sexo: " + getSexo());
         System.out.println("Data da compra: " + getDataCompra());
         System.out.println("Origem: " + getOrigemCompra());
+        //teste
     }
     
 }
