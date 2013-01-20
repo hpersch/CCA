@@ -8,18 +8,27 @@ import java.util.Date;
 public class Bicho{
     
     private int numAnimal;
-    private float valorAnimal;
+    private double valorAnimal;
     private String raça;
     private String sexo;
     private Date dataCompra;
+
+    public Date getDataCompra() {
+        return dataCompra;
+    }
+
+    public void setDataCompra(Date dataCompra) {
+        this.dataCompra = dataCompra;
+    }
     private String origemCompra;
     
-    public Bicho (){
-    this.numAnimal = 0;
-    this.valorAnimal = 0;
-    this.raça = " ";
-    this.sexo = " ";
-    this.origemCompra = " ";
+    public Bicho (int num, double valor, String raça, String sexo, String origemCompra, Date dataCompra){
+    this.numAnimal = num;
+    this.valorAnimal = valor;
+    this.raça = raça;
+    this.sexo = sexo;
+    this.origemCompra = origemCompra;
+    this.dataCompra = dataCompra;
 }
 
     public int getNumAnimal() {
@@ -30,11 +39,11 @@ public class Bicho{
         this.numAnimal = numAnimal;
     }
 
-    public float getValorAnimal() {
+    public double getValorAnimal() {
         return valorAnimal;
     }
 
-    public void setValorAnimal(float valorAnimal) {
+    public void setValorAnimal(double valorAnimal) {
         this.valorAnimal = valorAnimal;
     }
 
@@ -64,6 +73,14 @@ public class Bicho{
    
     
     //imprime
+    public void mostra(){
+        System.out.println("Numero da etiqueta: " + getNumAnimal());
+        System.out.println("Preço: R$" + getValorAnimal() );
+        System.out.println("Raça: " + getRaça());
+        System.out.println("Sexo: " + getSexo());
+        System.out.println("Data da compra: " + getDataCompra());
+        System.out.println("Origem: " + getOrigemCompra());
+    }
     
 }
 
