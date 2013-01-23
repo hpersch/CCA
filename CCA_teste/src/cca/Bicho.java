@@ -71,7 +71,6 @@ public class Bicho{
         this.origemCompra = origemCompra;
     }
    
-    
     //imprime
     public void mostra(){
         System.out.println("Numero da etiqueta: " + getNumAnimal());
@@ -80,9 +79,6 @@ public class Bicho{
         System.out.println("Sexo: " + getSexo());
         System.out.println("Data da compra: " + getDataCompra());
         System.out.println("Origem: " + getOrigemCompra());
-        //teste
     }
-    
+ 
 }
-
-
